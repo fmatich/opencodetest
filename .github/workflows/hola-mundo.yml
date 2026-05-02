@@ -1,0 +1,13 @@
+name: Hola Mundo
+
+on:
+  push:
+    branches:
+      - feature/github-action-hola-mundo
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir mensaje
+        run: echo "Hola mundo"
